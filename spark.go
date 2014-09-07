@@ -20,7 +20,7 @@ func monitorDroplet(dropletId, sparkDeviceId, sparkAccessToken, digitalOceanAcce
 	redLed := gpio.NewLedDriver(sparkCore, "led", "D0")
 	greenLed := gpio.NewLedDriver(sparkCore, "led", "D1")
 	work := func() {
-		gobot.Every(5*time.Second, func() {
+		gobot.Every(1*time.Second, func() {
 			dropletReq, err := http.NewRequest("GET", "https://api.digitalocean.com/v2/droplets/"+dropletId, nil)
 			if err != nil {
 				log.Printf("Error %v", err)
