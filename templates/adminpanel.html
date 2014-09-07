@@ -1,0 +1,75 @@
+<div class="ui page grid" style="margin-top:1rem;padding-bottom:120px;">
+    <div class="four wide column"></div>
+    <div class="eight wide column">
+        <div class="ui grid">
+            {{#meta}}
+            <div class="middle aligned row">
+                <div class="four wide column">
+                    <center>
+                        <div class="ui large label" id="userLabel">{{name}}
+                        </div>
+                    </center>
+                </div>
+                <div class="eight wide column">
+                    <h2 class="ui center aligned header" style="font-family: 'Pacifico', cursive; margin-bottom: 10px;">
+                        spark.DO
+                    </h2>
+                    <div class="ui divider" style="margin-top: 0px;margin-bottom: 0px;"></div>
+                </div>
+                <div class="four wide column">
+                    <center>
+                        <div class="small ui animated black button" id="logout">
+                            <div class="visible content">
+                                <i class="off icon"></i>
+                            </div>
+                            <div class="hidden content">Logout</div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <div class="row">
+                <div class="sixteen wide column">
+                    <div class="ui pointing menu">
+                        <a class="active item" id="menu-droplets">
+                            <i class="cloud icon"></i> Droplets
+                            <div class="ui blue label" id="favoritesCount">{{dropletSize}}</div>
+                        </a>
+                        <a class="item" id="menu-spark">
+                            <i class="dashboard icon"></i> Spark
+                        </a>
+                        <div class="right menu">
+                            <div class="ui simple dropdown item">
+                                More <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <a href="http://www.iubenda.com/privacy-policy/825104" target="_blank" class="item">Privacy Policy</a>
+                                    <a href="mailto:frable90@gmail.com" class="item">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/meta}}
+            <div class="row ui transition visible" id="userContent">
+                <div class="sixteen wide column">
+                    <div class="ui feed segment" id="tracks">
+                        {{#droplets}}
+                        <div class="event">
+                            <div class="label">
+                                <i class="circular cloud icon"></i>
+                            </div>
+                            <div class="content">
+                                <div class="date"><i class="blue large play sign link icon monitor" data-id="{{id}}"></i>
+                                </div>
+                                <div class="summary"> <b>{{name}}</b>
+                                    <br>{{status}}</div>
+                            </div>
+                        </div>
+                        {{/droplets}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four wide column"></div>
+    </div>
+</div>

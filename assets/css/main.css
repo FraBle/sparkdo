@@ -1,0 +1,7 @@
+.ui.grid>.row {
+    margin-top: 0px;
+}
+.ui.page.grid {
+    padding-left: 3%;
+    padding-right: 3%;
+}
