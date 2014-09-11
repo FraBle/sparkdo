@@ -12,9 +12,12 @@ spark.DO provides the ability to monitor [DigitalOcean](https://www.digitalocean
 It watches the status of a selected server instance and gives visual feedback via LEDs.
 
 ## What about mobile?
-There is also a [Pebble](https://getpebble.com/ "Pebble") app available (called pebble.DO), which provides common commands besides the status report (not part of this repository).
+There is also a [Pebble](https://getpebble.com/ "Pebble") app available (called pebble.DO), which provides common commands besides the status report (not part of this repository). As a little extra we put the DigitalOcean logo on the Pebble, the code can be found [here](https://github.com/xchrdw/shark)
 ![pebble.DO Cover](http://i.imgur.com/OYst5pP.png "pebble.DO Cover")
 
+## Video
+
+[![Video](http://img.youtube.com/vi/jJkpZ2Pn8ZA/0.jpg "spark.DO and pebble.DO - TechCrunch Disrupt SF Hackathon 2014")](https://www.youtube.com/watch?v=jJkpZ2Pn8ZA)
 
 ## Used packages
 
